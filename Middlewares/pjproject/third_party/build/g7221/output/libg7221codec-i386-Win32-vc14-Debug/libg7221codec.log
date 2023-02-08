@@ -1,0 +1,42 @@
+﻿  basic_op.c
+  common.c
+C:\espressif\pjproject-2.12\third_party\g7221\common\common.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_def.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_tab.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  huff_tab.c
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_tab.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_def.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  tables.c
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  coef2sam.c
+C:\espressif\pjproject-2.12\third_party\g7221\decode\coef2sam.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  dct4_s.c
+C:\espressif\pjproject-2.12\third_party\g7221\decode\dct4_s.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\decode\dct4_s.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  decoder.c
+C:\espressif\pjproject-2.12\third_party\g7221\decode\decoder.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_def.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  dct4_a.c
+C:\espressif\pjproject-2.12\third_party\g7221\encode\dct4_a.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\encode\dct4_a.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  encoder.c
+C:\espressif\pjproject-2.12\third_party\g7221\encode\encoder.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\huff_def.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  sam2coef.c
+C:\espressif\pjproject-2.12\third_party\g7221\encode\sam2coef.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\espressif\pjproject-2.12\third_party\g7221\common\tables.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  libg7221codec.vcxproj -> C:\espressif\pjproject-2.12\third_party\lib\libg7221codec-i386-Win32-vc14-Debug.lib
