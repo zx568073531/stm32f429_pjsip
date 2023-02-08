@@ -166,70 +166,14 @@ void network_Init(void)
 	
 	waitIP = xSemaphoreCreateBinary();
 	
-	//Enable RNG peripheral clock
-	__HAL_RCC_RNG_CLK_ENABLE();
-	//Initialize RNG
-	RNG_Handle.Instance = RNG;
-	HAL_RNG_Init(&RNG_Handle);
-		
-	//Generate a random seed
-	for(i = 0; i < 32; i += 4)
-	{
-		//Get 32-bit random value
-		HAL_RNG_GenerateRandomNumber(&RNG_Handle, &value);
-
-		//Copy random value
-		seed[i] = value & 0xFF;
-		seed[i + 1] = (value >> 8) & 0xFF;
-		seed[i + 2] = (value >> 16) & 0xFF;
-		seed[i + 3] = (value >> 24) & 0xFF;
-	}
+		/* initialize the hardware */
+	PCF8574_Init();
 	
-	//Initialize hardware cryptographic accelerator
-	error = stm32f4xxCryptoInit();
-	//Any error to report?
-	if(error)
-	{
-		//Debug message
-		msg_log("Failed to initialize hardware crypto accelerator!\r\n");
-	}
-
-	//Generate a random seed
-	error = trngGetRandomData(seed, sizeof(seed));
-	//Any error to report?
-	if(error)
-	{
-		//Debug message
-		msg_log("Failed to generate random data!\r\n");
-	}
-
-	//PRNG initialization
-	error = yarrowInit(&yarrowContext);
-	//Any error to report?
-	if(error)
-	{
-		//Debug message
-		msg_log("Failed to initialize PRNG!\r\n");
-	}
-
-	//Properly seed the PRNG
-	error = yarrowSeed(&yarrowContext, seed, sizeof(seed));
-	//Any error to report?
-	if(error)
-	{
-		//Debug message
-		msg_log("Failed to seed PRNG!\r\n");
-	}
+	//Reset PHY transceiver
+	PCF8574_WriteBit(ETH_RESET_IO,1);     
+	vTaskDelay(10);
+	PCF8574_WriteBit(ETH_RESET_IO,0); 
 	
-	//File system initialization
-	error = fsInit();
-	//Any error to report?
-	if(error)
-	{
-		//Debug message
-		msg_log("Failed to initialize file system!\r\n");
-	}
-	 
 	//TCP/IP stack initialization
 	error = netInit();
 	//Failed to start DHCP client?
@@ -260,14 +204,6 @@ void network_Init(void)
 	netSetDriver(interface, &stm32f4xxEthDriver);
 	netSetPhyDriver(interface, &lan8720PhyDriver);
 
-	/* initialize the hardware */
-	PCF8574_Init();
-	
-	//Reset PHY transceiver
-	PCF8574_WriteBit(ETH_RESET_IO,1);     
-	vTaskDelay(10);
-	PCF8574_WriteBit(ETH_RESET_IO,0); 
-	
 	//Initialize network interface
 	error = netConfigInterface(interface);
 	//Failed to initialize DHCP client?

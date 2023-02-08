@@ -42,6 +42,9 @@ typedef struct pthread_key_data {
 	pthread_thread_data thread_data;
 } pthread_key_data;
 
+
+int pthread_key_init(void);
+
 #ifdef __cplusplus
 }
 #endif
